@@ -14,3 +14,4 @@ const query = async function () {
     alert("Something is wrong");
   }
 };
+query();
