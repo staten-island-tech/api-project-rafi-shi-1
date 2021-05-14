@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  background-color: #111;
+  background-color: pink;
 }
 
 .header {
@@ -35,7 +35,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 90vw;
-  background-color: white;
+  background-color: black;
   margin: 1rem auto;
   padding: 3rem auto;
   -webkit-box-align: center;
@@ -93,9 +93,10 @@ body {
 }
 
 .movie-card-header {
-  font-size: 2.4rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   margin: 1rem auto;
+  color: turquoise;
   text-align: center;
 }
 
