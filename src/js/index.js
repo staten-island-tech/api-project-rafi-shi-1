@@ -6,7 +6,7 @@ const key = "YOURKEYHERE";
 const query = async function () {
   try {
     const response = await fetch(
-      `https://opentdb.com/api.php?amount=12&difficulty=medium&type=multiple`
+      `https://opentdb.com/api.php?amount=20&difficulty=medium&type=multiple`
     );
     const data = await response.json();
     data.results.forEach((trivia) => {
