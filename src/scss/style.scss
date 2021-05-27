@@ -36,7 +36,7 @@ body {
   align-items: center;
 }
 .movie-card {
-  height: 65vh;
+  height: 50vh;
   width: 20vw;
   margin: 0 auto;
   position: relative;
@@ -52,6 +52,7 @@ body {
   background-position: center;
   z-index: 3;
   transition: all 0.3s;
+  background-color: pink;
 }
 .poster {
   width: 100%;
@@ -77,8 +78,8 @@ body {
   font-size: 1.2rem;
   text-transform: uppercase;
   margin: 1rem auto;
-  color: turquoise;
-
+  color: black;
+  margin-top: 40%;
   text-align: center;
 }
 .score-box,
@@ -111,6 +112,7 @@ body {
 .movie-card:hover .movie-card-back {
   z-index: 3;
   display: flex;
+  background-color: pink;
 }
 .test {
   color: black;
