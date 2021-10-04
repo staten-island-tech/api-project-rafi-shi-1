@@ -1,158 +1,91 @@
-html,
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-size: 62.5%;
-  color: white;
-  font-family: "Josefin Slab", serif;
-  font-weight: 500;
-}
-
-body {
-  background-color: cornflowerblue;
+  background-image: url(chuck-norris.v1.cropped.jpg);
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header {
-  font-size: 5.2rem;
-  margin: 3rem auto;
+  background-color: turquoise;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  font-size: 3.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
-.top-rated {
-  margin: 1rem auto 2rem auto;
+.container {
+  display: inline;
+  border-radius: 1.5rem;
   text-align: center;
-  font-size: 3.8rem;
-}
-
-.movie-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 90vw;
-  background-color: #1c1c20;
-  margin: 1rem auto;
-  padding: 3rem auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.movie-card {
-  height: 50vh;
-  width: 20vw;
-  margin: 0 auto;
-  position: relative;
-  margin: 2rem auto;
-}
-
-.movie-card-front {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  /* background-image: url("https://image.tmdb.org/t/p/w300/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg"); */
-  background-position: center;
-  z-index: 3;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  background-color: #17202a;
-}
-
-.next {
-  margin-left: 4rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.movie-card-back {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.box-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  background-color: hotpink;
+  /*max-width: fit-content;*/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: whitesmoke;
-  width: 100%;
-  height: 100%;
-}
-
-.movie-card-header {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  margin: 1rem auto;
-  color: whitesmoke;
-  margin-top: 40%;
   text-align: center;
 }
 
-.score-box,
-.release-box {
-  text-align: center;
-}
-
-.movie-genres {
-  font-size: 1.6rem;
-  padding: 1rem 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.movie-genre {
-  list-style: none;
-}
-
-.user-score {
-  font-size: 2rem;
-}
-
-.release-date {
-  font-size: 2rem;
-}
-
-.movie-card:hover .movie-card-front {
-  z-index: 1;
-}
-
-.movie-card:hover .movie-card-back {
-  z-index: 3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #17202a;
-}
-
-.test {
+.numbers {
   color: black;
-  font-size: 3rem;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.poster {
-  size: 10rem;
+.btn {
+  background-color: white;
+  color: turquoise;
+  margin: auto;
+  border-radius: 3rem;
+  opacity: 0.85;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.5rem;
+  font-weight: 700;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 35%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  border: solid wheat 0.3rem;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  text-shadow: black;
+}
+
+.quote-display {
+  display: inline flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 1rem;
+  border: solid wheat 0.3rem;
+  background-color: black;
+  height: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 7%;
+  font-size: 4rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  color: white;
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

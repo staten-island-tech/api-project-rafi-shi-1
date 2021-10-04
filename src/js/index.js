@@ -1,36 +1,40 @@
 const DOMSelectors = {
-  grid: document.querySelector(".movie-grid"),
+  quote: document.querySelector(".quote-display"),
 };
 
-const key = "YOURKEYHERE";
 const query = async function () {
   try {
-    const response = await fetch(
-      `https://opentdb.com/api.php?amount=12&difficulty=medium&type=multiple`
-    );
+    const response = await fetch(`https://api.chucknorris.io/jokes/random`);
     const data = await response.json();
-    data.results.forEach((trivia) => {
-      DOMSelectors.grid.insertAdjacentHTML(
-        "beforeend",
-        `<div class="movie-card">
-      <div class="movie-card-front">
-      <h3 class="movie-card-header">${trivia.question}</h3>
-      </div>
-      <div class="movie-card-back">
-        
-        <div class="score-box">
-          <p class="user-score">${trivia.correct_answer}</p>
-          <p class="user-score"></p>
-        </div>
 
-        
+    data.result.forEach((fact) => {
+      DOMSelectors.quote.insertAdjacentHTML(
+        "beforeend",
+        `<div class="test">
+      <h1 class="Header"> Chuck Norris Facts </h1>
+    </div>
+    <div class="container">
+      <h2 class="box-title">
+  
+      </h2>s
+      <div class="numbers">
       </div>
-    </div> `
+      <div class="btn">
+        Random
+  
+  
+      </div>
+      <div class="quote-display" id="quote">
+        Fatin ${fact.value}
+      </div>
+  
+  
+    </div>`
       );
     });
   } catch (error) {
     console.log(error);
-    alert("Something is wrong");
+    alert("Something went wrong");
   }
 };
 query();
