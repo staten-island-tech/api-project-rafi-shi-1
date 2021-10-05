@@ -6,7 +6,8 @@ const query = async function () {
   try {
     const response = await fetch(`https://api.chucknorris.io/jokes/random`);
     const data = await response.json();
-    const arrayData = [data];
+    /*const arrayData = [];
+    arrayData.push(data);*/
 
     data.response.array.forEach((fact) => {
       DOMSelectors.quote.insertAdjacentHTML(
@@ -33,6 +34,7 @@ const query = async function () {
     </div>`
       );
     });
+
     /*(fact) => {
       DOMSelectors.quote.insertAdjacentHTML(
         "beforeend",
