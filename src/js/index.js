@@ -1,11 +1,13 @@
 const DOMSelectors = {
   quote: document.querySelector(".quote-display"),
 };
-
+const response = await fetch(`https://api.chucknorris.io/jokes/random`);
+response();
 const query = async function () {
   try {
     const response = await fetch(`https://api.chucknorris.io/jokes/random`);
     const data = await response.json();
+    console.log(data.response);
 
     /*const arrayData = [];
     arrayData.push(data);*/
