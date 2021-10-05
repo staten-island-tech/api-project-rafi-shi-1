@@ -6,6 +6,7 @@ const query = async function () {
   try {
     const response = await fetch(`https://api.chucknorris.io/jokes/random`);
     const data = await response.json();
+
     /*const arrayData = [];
     arrayData.push(data);*/
 
