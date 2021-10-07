@@ -10,34 +10,24 @@ const query = async function () {
     const arrayData = [];
     arrayData.push(data);
 
-    const displayQuote = function () {
+    const displayQuote = function (data) {
+      const fact = data;
       DOMSelectors.quote.insertAdjacentHTML(
         "beforeend",
-        `<div class="test">
-        <h1 class="Header"> Chuck Norris Facts </h1>
-      </div>
-      <div class="container">
-        <h2 class="box-title">
-    
-        </h2>s
-        <div class="numbers">
-        </div>
-        <div class="btn">
-          Random
+        `
     
     
         </div>
-        <div class="quote-display" id="quote">
-          Fatin ${fact.value}
+        <div id="quote">
+        ${data.value}
         </div>
     
     
-      </div>`,
-
-        console.log(displayQuote)
+      </div>`
       );
     };
-    DOMSelectors.quote.insertAdjacentHTML(
+    displayQuote(data);
+    /* DOMSelectors.quote.insertAdjacentHTML(
       "beforeend",
       `<div class="test">
       <h1 class="Header"> Chuck Norris Facts </h1>
@@ -59,7 +49,7 @@ const query = async function () {
   
   
     </div>`
-    );
+    ); */
   } catch (error) {
     /*(fact) => {
       DOMSelectors.quote.insertAdjacentHTML(
@@ -89,5 +79,5 @@ const query = async function () {
     console.log(error);
     alert("Something went wrong");
   }
-  query();
 };
+query();
