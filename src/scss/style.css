@@ -59,12 +59,14 @@ body {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   border: solid wheat 0.3rem;
+  cursor: pointer;
 }
 
 .btn:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   text-shadow: black;
+  cursor: pointer;
 }
 
 .quote-display {
@@ -87,5 +89,20 @@ body {
   font-weight: 800;
   color: white;
   width: 50%;
+  font-size: 1.3rem;
+}
+
+.quote {
+  color: navajowhites;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */

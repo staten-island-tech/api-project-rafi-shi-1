@@ -45,11 +45,13 @@ body {
   width: 35%;
   transition: all 0.4s ease-in-out;
   border: solid wheat 0.3rem;
+  cursor: pointer;
 }
 
 .btn:hover {
   transform: scale(1.2);
   text-shadow: black;
+  cursor: pointer;
 }
 .quote-display {
   display: inline flex;
@@ -67,4 +69,11 @@ body {
   font-weight: 800;
   color: white;
   width: 50%;
+  font-size: 1.3rem;
+}
+.quote {
+  color: navajowhites;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
